@@ -30,4 +30,6 @@ This is a project is an implemention of a multiclassifier, using the one-vs-all 
 
 ![scatter_plot.py screenshot](screenshots/scatter_plot.png)
 
+### Logistic Regression
 
+![logistic regression screenshot](screenshots/logistic_regression.png)
