@@ -20,6 +20,14 @@ This is a project is an implemention of a multiclassifier, using the one-vs-all 
 
 ### Describes
 
-![describes screenshot](screenshots/describes.png)
+![describes.py screenshot](screenshots/describes.png)
+
+### Histogram
+
+![histogram.py screenshot](screenshots/histogram.png)
+
+### Scatter Plot
+
+![scatter_plot.py screenshot](screenshots/scatter_plot.png)
 
 
