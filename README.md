@@ -16,6 +16,6 @@ This is a project is an implemention of a multiclassifier, using the one-vs-all 
  
  `logreg_predict.py dataset weights` generate prediction for the given dataset and weights. It generate a `houses.csv` file with all the result of the prediction.
  
- ## Screen
+ ## Images
 
 
