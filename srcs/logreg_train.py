@@ -64,7 +64,6 @@ def train(input):
             else:
                 x[i][(j - 1)] = np_data[i][j]
     thetas, classes, costs = fit(x, y)
-    thetas = np.array(thetas)
     np.save("weight", np.array(thetas))
 
 if __name__ == "__main__":
