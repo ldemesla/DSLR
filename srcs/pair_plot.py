@@ -6,7 +6,6 @@ import seaborn as sns
 import pandas as pd
 
 def pair_plot(input):
-    plt.figure("what features are you going to use for your logistic regression?")
     data = pd.read_csv(input)
     data = data.drop(['Index','First Name','Last Name', 'Birthday'], axis=1)
     sns.set(style="ticks", color_codes=True)

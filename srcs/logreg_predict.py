@@ -23,10 +23,21 @@ def standardize_data(data):
             for elem in data[key].iteritems():
                 data.at[elem[0], key] = (data.at[elem[0], key] - minm) / (maxm - minm)
 
+def get_mean(data):
+    total = 0
+    for x in data:
+        try:
+            int(x)
+            total = total + x
+        except:
+            pass
+    return (total / len(data))
+    
 def extract_data(train, weight):
     df = pd.read_csv(train)
     df = df.drop(["First Name", "Last Name", "Birthday", "Best Hand", "Index", "Hogwarts House"], axis=1)
-    df = df.dropna()
+    for key in df:
+        df[key] = df[key].fillna(get_mean(df[key]))
     standardize_data(df)
     data = df.to_numpy()
     thetas = np.load(weight)

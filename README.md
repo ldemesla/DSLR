@@ -1,4 +1,4 @@
-# DSLR
+# Multiclassifier
 
 This is a project is an implemention of a multiclassifier, using the one-vs-all (or one-vs-rest) technique, which aim to predict the Harry Potter's Hogwarts Houses of a student according to a set of features.
 
